@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-advanced">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="progress">
+          <div class="audio-name"></div>
+          <input type="range" min="0" max="100" step="1" class="audio-progress">
+        </div>
+        <div class="audio-time"></div>
+        <button class="audio-volume-button"></button>
+        <input type="range" min="0" max="100" step="1" class="audio-volume-progress">
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class=" weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+    <div class="settings-modal">
+      <div class="settings-modal-content">
+        <span class="settings-modal-close">X</span>
+        <div class="change-lang">
+          <p> Изменить язык приложения </p>
+          <div class="switch-on">РУС</div>
+        </div>
+        <div class="change-back">
+          <p> Выберите источник получения изображений </p>
+          <select>
+            <option value=1 selected> GitHub</option>
+            <option value=2> Unsplash API</option>
+            <option value=3>Flickr API</option>
+          </select>
+        </div>
+        <div class="change-theme">
+          <p> Выберите тему изображений </p>
+          <select disabled>
+            <option value="nature" selected> Природа</option>
+            <option value="animals"> Животные</option>
+            <option value="auto">Автомобили</option>
+          </select>
+        </div>
+        <div class="show">
+          <div class="show-column1">
+            <div class="show-audio">
+              <p> Аудиоплеер </p>
+              <div class="switch-on"></div>
+            </div>
+            <div class="show-time">
+              <p> Время </p>
+              <div class="switch-on"></div>
+            </div>
+            <div class="show-date">
+              <p> Дата </p>
+              <div class="switch-on"></div>
+            </div>
+          </div>
+          <div class="show-column2">
+            <div class="show-text">
+              <p> Приветствие</p>
+              <div class="switch-on"></div>
+            </div>
+            <div class="show-quote">
+              <p> Цитаты</p>
+              <div class="switch-on"></div>
+            </div>
+            <div class="show-weather">
+              <p> Прогноз погоды</p>
+              <div class="switch-on"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quotesBlock">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="settings"></div>
+      <div><a target="_blanc" href="https://rs.school/js/"><img id="rss" src="./assets/svg/rss.svg" alt="RSSchool"></a>
+      </div>
+      <div> <a target="_blanc" href="https://github.com/Swettlana"><img id="github" src="./assets/svg/github.svg"
+            alt="Github"></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/qotes.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/settingsShow.js"></script>
+  <script type="module" src="js/audio.js"></script>
+</body>
+</html>
